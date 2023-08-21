@@ -20,6 +20,15 @@
 
 }
 
+$bg-largest:75em;  //1200px
+$bg-large:70.75em; //1132px
+$bg-medium:57.5em; //920
+$bg-small:37.5em; //600
+$bg-smaller:31.5em; //500
+$bg-smaller-phone:28.125em; //450
+
+
+
 
 
 *{
@@ -37,6 +46,10 @@
 html {
     box-sizing: border-box;
     font-size:62.5%;
+
+    @media only screen and (max-width:$bg-large) {
+        font-size: 50%;
+    }
 }
 
 body {
